@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+    color: #671313;
+font-family: serif;
+}
+.header-text{
+    color: whitesmoke;
+    font-family: serif;
+}
+.card {
+    background-color: #ef567a;
+    border: none;
+}
+
+.card .btn-primary {
+    background-color: #A91d3A;
+    border: none;
+}
+.btn-primary {
+    background-color: #30221f;
+    border-color: #d9d1d0;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+    background-color: #170b09;
+    border-color: #e3dfde;
+}
+/* .tutorials-trainings{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 20px; */
+}
+#trainings{
+    size: 240px;
+
+}
+
+
+.card .btn-primary.clicked {
+    background-color: black;
+}
+
+.navbar {
+    margin-bottom: 20px;
+    background-color: #A91d3A;
+}
+
+.details {
+    display: none;
+}
+
+.navbar-brand{
+    padding-left: 20px;
+    font-size: 30px;
+}
+.card-body{
+    border-color: #671313;
+    border: 5px solid #A91d3A ;
+    border-radius: 5px;
+}
+.card{
+    border: 5px sloid #A91d3A;
+}

@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Migration Strategy Planner</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-light">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <img src="data:image/jpeg;base64,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" alt="" width="100" height="100">
+        <a class="navbar-brand" href="#">Cloud Migration Planner</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#on-premise-analysis">On-premise Analysis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#migration-strategies">Migration Strategies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cost-estimator">Cost Estimator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tutorials">Tutorials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#trainings">Trainings</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <header class="text-center my-5">
+            <h1 class="header-text">Cloud Migration Strategy Planner</h1>
+        </header>
+        <div class="section mb-5" id="on-premise-analysis">
+            <div class="card text-white text-center p-3">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="card-title">On-premise Analysis</h2>
+                    <p>AWS App Discovery, Store in S3, analyzed by Lambda</p>
+                    <button class="btn btn-primary" data-toggle="details" data-target="on-premise-analysis-details">View Details</button>
+                    <div id="on-premise-analysis-details" class="details mt-3" style="display: none;">
+                        <p>Details about on-premise analysis...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section mb-5" id="migration-strategies">
+            <div class="card text-white text-center p-3">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="card-title">Migration Strategies</h2>
+                    <button class="btn btn-primary" data-toggle="details" data-target="migration-strategies-details">View Details</button>
+                    <div id="migration-strategies-details" class="details mt-3" style="display: none;">
+                        <p>Details about migration strategies...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section mb-5" id="cost-estimator">
+            <div class="card text-white text-center p-3">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="card-title">Cost Estimator</h2>
+                    <p>AWS Pricing Calc API</p>
+                    <button class="btn btn-primary" data-toggle="details" data-target="cost-estimator-details">View Details</button>
+                    <div id="cost-estimator-details" class="details mt-3" style="display: none;">
+                        <p>Details about cost estimator...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tutorials-trainings">
+        <div class="section mb-5" id="tutorials">
+            <div class="card text-white text-center p-3">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="card-title">Tutorials</h2>
+                    <button class="btn btn-primary" data-toggle="details" data-target="tutorials-details">View Details</button>
+                    <div id="tutorials-details" class="details mt-3" style="display: none;">
+                        <p>Details about tutorials...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section mb-5" id="trainings">
+            <div class="card text-white text-center p-3">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="card-title">Trainings</h2>
+                    <button class="btn btn-primary" data-toggle="details" data-target="trainings-details">View Details</button>
+                    <div id="trainings-details" class="details mt-3" style="display: none;">
+                        <p>Details about trainings...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Include Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
